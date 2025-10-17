@@ -1,0 +1,28 @@
+PRD = Project Requirement Documentation
+
+
+user => foods reels, view food items
+food partner => list food items
+
+Authentication : 1) user registration 
+                 2) partner registration
+
+
+**have to learn about REST API's**
+**mongoDB atlas**
+
+1) bcrypt: 
+=> even after your users password ot data is leadked you can protect that using hashing   thtpassword using the bcrypt.
+
+2) request kaha se aa rahi hai ye pata karne ke liye hum token create karte hai. aur uss token ko save karne ke liye cookies ka use karte hai
+so, we install :- jsonwebtoken,cookie-parsor.
+
+3) database mein unique id dene ke liye (har ek user ko)
+=>  const token = jwt.sign({
+        id: user._id,
+        
+    })
+    for that we will use jwt secret generator.
+    
+
+4) jwt secret jo hai ussee .env file mein rakhna hai taki wo secret rahe aur koi bhi ussee access na kar payee.
